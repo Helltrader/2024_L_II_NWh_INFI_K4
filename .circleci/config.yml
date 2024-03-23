@@ -4,7 +4,7 @@ jobs:
     machine:
       image: ubuntu-2004:202104-01
     steps:
-      - checkout
+      - run: make checkout
       - run: make deps
       - run: make lint
       - run: make test
